@@ -1,0 +1,69 @@
+#Created by Deni Zmak
+#SE 450 - Senior Design Project, BEHI 2.0
+#October 18, 2015
+
+
+#-------------------------------------------------- RETRIEVE DATA ----------------------------------------------------------------------
+
+SELECT * FROM Account ORDER BY username;
+SELECT LastName, firstName FROM Instructor ORDER BY lastName, firstName;
+SELECT courseID FROM Course ORDER BY courseID;
+SELECT * FROM Course WHERE courseID = 'SE 310';
+SELECT * FROM Instructor WHERE instructorID = '1111111';
+SELECT * FROM Instructor WHERE lastName = 'Behi' AND firstName = 'Farahzad';
+SELECT * FROM Instructor WHERE email = 'stansbur@erau.edu';
+SELECT preReqCourse, preReqNumber FROM PreRequisites WHERE courseID = 'SE 320';
+SELECT coReqCourse, coReqNumber FROM CoRequisites WHERE courseID = 'CS 225';
+
+
+#-------------------------------------------------------------- DELETE ----------------------------------------------------------------
+INSERT INTO Course VALUES ('SE 777', 'Test', '22', '0', '0', '0', '0', '0');
+SELECT courseID FROM Course ORDER BY courseID;
+DELETE FROM Course WHERE courseID = 'SE 777';
+
+INSERT INTO Instructor VALUES ('5555555', 'Richard5', 'Stansbury5', 'stansbur5@erau.edu', 'stansbur5');
+INSERT INTO Account VALUES ('stansbur5', 'password', '1');
+
+SELECT * FROM Account ORDER BY username;
+SELECT LastName, firstName FROM Instructor ORDER BY lastName, firstName;
+
+DELETE FROM Instructor WHERE instructorID = '5555555';
+DELETE FROM Instructor WHERE firstName = 'Richard5' AND lastName = 'Stansbury5';
+DELETE FROM Instructor WHERE email = 'stansbur5@erau.edu';
+DELETE FROM Account WHERE username = 'stansbur5';
+
+
+#-------------------------------------------------------------- UPDATE COURSE ----------------------------------------------------------------
+INSERT INTO Course VALUES ('SE 000', 'Software Engineering Course', '11', '1', '1', '1', '1', '1');
+SELECT * FROM Course WHERE courseID = 'SE 000';
+
+UPDATE Course SET credits = '3' WHERE courseID = 'SE 000';
+UPDATE Course SET fullName = 'Test' WHERE courseID = 'SE 000';
+UPDATE Course SET springTerm = '0' WHERE courseID = 'SE 000';
+UPDATE Course SET fallTerm = '0' WHERE courseID = 'SE 000';
+UPDATE Course SET summerA = '0' WHERE courseID = 'SE 000';
+UPDATE Course SET summerB = '0' WHERE courseID = 'SE 000';
+UPDATE Course SET summerC = '0' WHERE courseID = 'SE 000';
+UPDATE Course SET courseID = 'SE 333' WHERE courseID = 'SE 000';
+SELECT * FROM Course WHERE courseID = 'SE 333';
+
+
+#-------------------------------------------------------------- UPDATE INSTRUCTOR ----------------------------------------------------------------
+INSERT INTO Account VALUES ('stansbur3', 'password', '0');
+SELECT * FROM Account ORDER BY username;
+INSERT INTO Instructor VALUES ('3333333', 'Richard', 'Stansbury', 'stansbur3@erau.edu', 'stansbur3');
+SELECT * FROM Instructor WHERE instructorID = '3333333';
+
+UPDATE Instructor SET instructorID = '2222222' WHERE instructorID = '3333333';
+UPDATE Instructor SET firstName = 'Nick' WHERE instructorID = '2222222';
+UPDATE Instructor SET lastName = 'Brixius' WHERE instructorID = '2222222';
+UPDATE Instructor SET email = 'brixiusn@erau.edu' WHERE instructorID = '2222222';
+UPDATE Instructor SET username = 'brixiusn' WHERE instructorID = '2222222';
+
+UPDATE Account SET username = 'brixiusn' WHERE username = 'stansbur3';
+SELECT * FROM Instructor WHERE instructorID = '2222222';
+
+
+
+
+

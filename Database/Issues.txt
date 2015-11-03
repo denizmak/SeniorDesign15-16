@@ -1,0 +1,12 @@
+Issues:
+
+1. Fix documentation
+2. Autoincrement for section?
+
+
+- Meet with Kurt to set up db on school server
+
+- create shell file for db
+- how to access mysql using shell before execution
+- lookup linux scp (secure file transfer)
+
