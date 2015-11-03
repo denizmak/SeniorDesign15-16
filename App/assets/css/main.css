@@ -1868,3 +1868,138 @@
 			}
 
 	}
+
+
+
+
+
+*{
+	padding : 0;
+	margin : 0;
+	border : 0;
+}
+
+.blended_grid{
+	display : block;
+	width : 1200px;
+	overflow : auto;
+	margin : 60px auto 0 auto;
+}
+
+.CoursesDiv{
+	float : left;
+	clear : none;
+	height : 800px;
+	width : 200px;
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px;
+}
+.CheckBoxDiv{
+	float : left;
+	clear : none;
+	height : 100px;
+	width : 900px;
+	border: 1px solid black;
+}
+.DaysDiv{
+	float : left;
+	clear : none;
+	height : 700px;
+	width : 900px;
+	border: 1px solid black;
+}
+.checkbox1{
+	margin: 0 auto;
+	border: 1px solid black;
+	padding: 32px 0px 32px 280px;
+}
+
+
+.blended_grid2{
+	display : block;
+	width : 900px;
+	overflow : auto;
+	margin : auto 0 auto;
+}
+#Monday{
+	clear : none;
+	float : left;
+	position : relative;
+	width : 180px;
+	height : 699px;
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px;
+}
+.Tuesday{
+	clear : none;
+	float : left;
+	position : relative;
+	width : 180px;
+	height : 699px;
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px;
+}
+.Wednesday{
+	clear : none;
+	float : left;
+	position : relative;
+	width : 180px;
+	height : 699px;
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px;
+}
+.Thursday{
+	clear : none;
+	float : left;
+	position : relative;
+	width : 180px;
+	height : 699px;
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px;
+}
+.Friday{
+	clear : none;
+	float : left;
+	position : relative;
+	width : 180px;
+	height : 699px;
+	border: 1px solid black;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 90px;
+}
+
+
+a.btn {
+	display: inline-block;
+	height: 90px;
+	width: 150px;
+	color: #666;
+	background-color: #eee;
+	font-size: 20px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+}
+
+a.btn:hover {
+	background-color: #e3e3e3;
+	border-color: rgba(0,0,0,0.5);
+}
+
+a.btn:active {
+	background-color: #CCC;
+	border-color: rgba(0,0,0,0.9);
+}
