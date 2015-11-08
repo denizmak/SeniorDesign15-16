@@ -1923,7 +1923,7 @@
 	overflow : auto;
 	margin : auto 0 auto;
 }
-#Monday{
+.Monday{
 	clear : none;
 	float : left;
 	position : relative;
